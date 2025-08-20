@@ -1,27 +1,52 @@
 # Studentsfrontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.20.
+## 📘 Student Data Frontend (Angular 18)
 
-## Development server
+Angular 18 app with Spring Boot backend for managing student data, handling large Excel/CSV files, and generating reports.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🚀  Features
 
-## Code scaffolding
+Upload & process Excel/CSV
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Generate Excel with large datasets
 
-## Build
+Automatic score updates (+10 in Excel, +5 in DB)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+View students with pagination, search, class filter
 
-## Running unit tests
+Export reports as Excel, CSV, PDF
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 🛠 Tech Stack
 
-## Running end-to-end tests
+Frontend: Angular 18, Angular Material, HttpClient
+Backend: Spring Boot 3.5.4, PostgreSQL 17.6, Apache POI, OpenCSV, iText
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## 📂 Installation
 
-## Further help
+## Clone & install:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+git clone <[frontend-repo-link](https://github.com/emmanuelnyaayo/student-data-frontend)>
+cd <student-data-frontend>
+npm install
+
+Run:
+ng serve
+
+Open in browser:
+👉 http://localhost:4200
+
+## 📖 Usage
+
+Generate Excel → Enter record count → Download file
+
+Process Excel → Upload file → CSV generated (+10 scores)
+
+Upload CSV → Save data to PostgreSQL (+5 scores)
+
+View & Export Reports → Pagination, search, filter → Export Excel/CSV/PDF
+
+## ⚡ Notes
+
+Ensure Spring Boot backend is running at the configured API endpoint.
+
+Angular Material provides UI components (tables, paginator, dropdowns, file input).

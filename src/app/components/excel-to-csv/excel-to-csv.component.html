@@ -1,0 +1,11 @@
+<div class="excel-to-csv">
+  <h2>Convert Excel to CSV</h2>
+
+  <div class="conversion-controls">
+    <input type="file" (change)="onFileSelected($event)" accept=".xlsx" />
+    <button (click)="convertFile()">Convert</button>
+  </div>
+
+  <p>{{ message }}</p>
+</div>
+

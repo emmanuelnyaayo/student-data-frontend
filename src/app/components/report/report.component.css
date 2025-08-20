@@ -1,0 +1,72 @@
+input, select {
+  font:  inherit;
+  padding: 6px;
+}
+
+input, label, select {
+  margin-top: 10px;
+}
+
+button {
+  padding: 10px 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  background: #1976d2;
+  color: white;
+}
+
+button:hover {
+  background: #0d47a1;
+}
+
+input {
+  margin-right: 10px;
+}
+
+label {margin-right: 5px;}
+
+
+.report {
+  padding: 2.5rem;
+  width: 100%;
+  background-color: #fafafa;
+  border-radius: 12px;
+  margin: 1rem 0 2rem;
+  flex: 1;
+}
+
+h2 {
+  font-weight: 500;
+}
+
+.report-controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-filter {
+  display: flex;
+  gap: 2rem;
+}
+
+.controls {
+  margin: 10px 0;
+}
+.export-buttons button {
+  margin-right: 10px;
+}
+
+.full-width-table {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.mat-mdc-paginator {
+  background-color: #333; 
+  color: white;             
+}
+
+
+

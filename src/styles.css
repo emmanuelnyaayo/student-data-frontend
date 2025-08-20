@@ -1,1 +1,53 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-variation-settings:
+        "wdth" 100;
+    background: #98a8b8;    
+}
+
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* Angular Material override Styles */
+.mat-mdc-select-value {
+  color: white !important; 
+}
+
+.mat-mdc-select-arrow {
+  color: white !important;
+}
+
+.mat-mdc-select-panel {
+  background-color: #fff !important;
+}
+
+.mat-mdc-paginator .mat-mdc-form-field.mat-focused {
+  --mdc-outlined-text-field-focus-outline-color: white !important;
+}
+
+.mat-mdc-paginator .mat-mdc-icon-button[disabled] .mat-mdc-button-touch-target,
+.mat-mdc-paginator .mat-mdc-icon-button[disabled] svg {
+  fill: gray !important;
+  color: gray !important;
+}
+
+.mat-mdc-paginator .mat-mdc-icon-button svg {
+  fill: white !important;
+  color: white !important;
+}
+

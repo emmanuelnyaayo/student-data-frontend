@@ -1,0 +1,44 @@
+.excel-generator {
+  padding:  3rem 2rem;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  width: 100%;
+  background-color: #fafafa;
+  height: 80vh;
+  margin-top: 1rem;
+}
+
+h2 {
+    font-weight: 500;
+}
+
+.form-controls {
+  margin-top: 2.5%;
+}
+
+label {
+    margin-top: 20px;
+    margin-right: 2rem;
+    font-weight: 500;
+}
+
+input {
+  margin: 10px 0;
+  padding: 6px;
+  font-size: 0.965rem;
+}
+
+button {
+  padding: 10px 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  background: #1976d2;
+  color: white;
+  display: block;
+}
+
+button:hover {
+  background: #0d47a1;
+}
