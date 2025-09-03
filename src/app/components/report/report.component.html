@@ -61,8 +61,13 @@
       <td mat-cell *matCellDef="let s">{{ s.score }}</td>
     </ng-container>
 
-    <tr mat-header-row *matHeaderRowDef="['studentId','firstName','lastName','dob','className','score']"></tr>
-    <tr mat-row *matRowDef="let row; columns: ['studentId','firstName','lastName','dob','className','score'];"></tr>
+    <ng-container matColumnDef="x">
+      <th mat-header-cell *matHeaderCellDef>Twice Score</th>
+      <td mat-cell *matCellDef="let s">{{ s.score * 2 }}</td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="['studentId','firstName','lastName','dob','className','score','x']"></tr>
+    <tr mat-row *matRowDef="let row; columns: ['studentId','firstName','lastName','dob','className','score', 'x'];"></tr>
   </table>
 
   <!-- Pagination -->

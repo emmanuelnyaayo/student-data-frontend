@@ -1,15 +1,11 @@
-
 import { Routes } from '@angular/router';
-import { ExcelGeneratorComponent } from './components/excel-generator/excel-generator.component';
-import { ExcelToCsvComponent } from './components/excel-to-csv/excel-to-csv.component';
-import { CsvUploadComponent } from './components/csv-upload/csv-upload.component';
-import { ReportComponent } from './components/report/report.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'generate', pathMatch: 'full' },
 
-  { path: 'generate', component: ExcelGeneratorComponent },   
-  { path: 'process', component: ExcelToCsvComponent },   
-  { path: 'upload', component: CsvUploadComponent },      
-  { path: 'report', component: ReportComponent }             
+  { path: 'generate', loadComponent: () => import('./components/excel-generator/excel-generator.component').then(m => m.ExcelGeneratorComponent) },
+  { path: 'process', loadComponent: () => import('./components/excel-to-csv/excel-to-csv.component').then(m => m.ExcelToCsvComponent) },
+  { path: 'upload', loadComponent: () => import('./components/csv-upload/csv-upload.component').then(m => m.CsvUploadComponent) },
+  { path: 'report', loadComponent: () => import('./components/report/report.component').then(m => m.ReportComponent) },
+  { path: 'summary', loadComponent: () => import('./components/summary/summary.component').then(m => m.SummaryComponent) }
 ];
